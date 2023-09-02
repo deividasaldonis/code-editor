@@ -25,6 +25,7 @@
     "@emmetio/codemirror-plugin": "^1.2.4",
     "@emmetio/codemirror6-plugin": "^0.3.0",
     "codemirror": "^6.0.1",
+    "eslint-linter-browserify": "^8.48.0",
     "thememirror": "^2.0.1"
   }
 }
