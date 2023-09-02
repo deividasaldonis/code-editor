@@ -1,15 +1,17 @@
-function setIframeContent({ html, css, js }) {
+import { JsEditor, CssEditor, HtmlEditor } from "./editor";
+
+function updateOutput() {
   output.srcdoc = `
       <html>
         <head>
-          <style>${css}</style>
+          <style>${CssEditor.code}</style>
         </head>
         <body>
-          ${html}
-          <script>${js}</script>
+          ${HtmlEditor.code}
+          <script>${JsEditor.code}</script>
         </body>
       </html>
     `;
 }
 
-export { setIframeContent };
+export { updateOutput };

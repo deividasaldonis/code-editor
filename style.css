@@ -1,30 +1,20 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
+* {
+  box-sizing: border-box;
   padding: 0;
-  background: #fff;
-  color: #444;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
 }
 
-body {
+.container {
   display: flex;
 }
 
-#editor {
-  height: 100%;
-}
-#editor {
-  flex: 2;
-}
-#output {
-  flex: 3;
+.editor-container,
+.output {
+  flex: 1;
 }
 
 .cm-editor {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
 }
 
 /* .cm-editor.cm-focused,
