@@ -16,6 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
   color: var(--secondary);
+  fill: var(--secondary);
 }
 
 #app {
@@ -25,6 +26,7 @@ body {
 
 .topnav {
   display: flex;
+  justify-content: space-between;
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -34,10 +36,16 @@ body {
 }
 
 .language {
+  display: flex;
+  align-items: center;
   padding: 1.2rem 1rem 1rem;
   border-bottom: 0.2rem solid transparent;
   cursor: pointer;
   user-select: none;
+}
+
+.language span {
+  display: none;
 }
 
 .language:hover {
@@ -46,8 +54,41 @@ body {
 
 .language.current {
   color: var(--primary);
+  fill: var(--primary);
   border-color: var(--primary);
   cursor: default;
+}
+
+.option-buttons {
+  display: flex;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1rem 1rem;
+  border-bottom: 0.2rem solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.option:hover {
+  border-color: var(--secondary);
+}
+
+.option.current {
+  color: var(--primary);
+  fill: var(--primary);
+  border-color: var(--primary);
+  cursor: default;
+}
+
+.option.preview.hide {
+  display: none;
+}
+
+.option span {
+  display: none;
 }
 
 .main {
@@ -55,12 +96,19 @@ body {
 }
 
 .editor-container {
-  flex: 2;
+  /* flex: 4; */
+  width: 100%;
 }
 
 .output {
-  flex: 3;
+  /* flex: 5; */
+  width: 100%;
   background-color: #f5f5f5;
+}
+
+.output.hide,
+.editor-container.hide {
+  display: none;
 }
 
 html,
@@ -83,4 +131,10 @@ body,
 
 .editor.current {
   display: block;
+}
+
+@media (min-width: 800px) {
+  .option {
+    display: none;
+  }
 }

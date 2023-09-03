@@ -15,17 +15,32 @@
     <div id="app">
       <div class="topnav">
         <div class="language-buttons">
-          <div class="language" data-lang="html">HTML</div>
-          <div class="language" data-lang="css">CSS</div>
-          <div class="language current" data-lang="js">JS</div>
+          <div class="language" data-lang="html">
+            <span>HTML</span>
+            <box-icon type="solid" size="md" name="file-html"></box-icon>
+          </div>
+          <div class="language" data-lang="css">
+            <span>CSS</span>
+            <box-icon type="solid" size="md" name="file-css"></box-icon>
+          </div>
+          <div class="language" data-lang="js">
+            <span>JS</span>
+            <box-icon name="file-js" size="md" type="solid"></box-icon>
+          </div>
+        </div>
+
+        <div class="option-buttons">
+          <div class="option preview">
+            <box-icon name="expand-horizontal" size="md"></box-icon>
+          </div>
         </div>
       </div>
 
       <div class="main">
-        <div class="editor-container">
+        <div class="editor-container hide">
           <div class="editor" data-name="html"></div>
           <div class="editor" data-name="css"></div>
-          <div class="editor current" data-name="js"></div>
+          <div class="editor" data-name="js"></div>
         </div>
 
         <iframe class="output" frameborder="0"></iframe>
