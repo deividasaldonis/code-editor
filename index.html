@@ -2,18 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Editor</title>
   </head>
   <body>
-    <div class="container">
-      <div class="editor-container">
-        <div id="editor-js"></div>
-        <div id="editor-html"></div>
+    <div id="app">
+      <div class="topnav">
+        <div class="language-buttons">
+          <div class="language" data-lang="html">HTML</div>
+          <div class="language" data-lang="css">CSS</div>
+          <div class="language current" data-lang="js">JS</div>
+        </div>
       </div>
-      <iframe class="output" id="output" frameborder="0"></iframe>
-    </div>
 
+      <div class="main">
+        <div class="editor-container">
+          <div class="editor" data-name="html"></div>
+          <div class="editor" data-name="css"></div>
+          <div class="editor current" data-name="js"></div>
+        </div>
+
+        <iframe class="output" frameborder="0"></iframe>
+      </div>
+    </div>
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

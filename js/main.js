@@ -1,5 +1,22 @@
-import "../style.css";
-import { JsEditor, HtmlEditor } from "./editor";
+import "../css/style.css";
+import { HTMLEditor, CSSEditor, JSEditor } from "./CodeEditor";
+import { UI } from "./UI";
 
-const jsEditor = new JsEditor();
-const htmlEditor = new HtmlEditor();
+new HTMLEditor();
+new CSSEditor();
+new JSEditor();
+UI.updateOutput();
+
+document
+  .querySelector(".language-buttons")
+  .addEventListener("click", UI.setEditor);
+window.addEventListener("resize", UI.adjustMainElementsHeight);
+// When you've done this, you can dispatch transactions to change your configuration.
+
+// document.querySelector("button").addEventListener("click", () => {
+//   view.dispatch({
+//     effects: themeConf.reconfigure(
+//       currentLang === "js" ? theme.light : theme.dark
+//     ),
+//   });
+// });

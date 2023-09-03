@@ -12,20 +12,10 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@codemirror/autocomplete": "^6.9.0",
-    "@codemirror/commands": "^6.2.5",
+    "@codemirror/lang-css": "^6.2.1",
     "@codemirror/lang-html": "^6.4.6",
     "@codemirror/lang-javascript": "^6.2.1",
-    "@codemirror/language": "^6.9.0",
-    "@codemirror/lint": "^6.4.1",
-    "@codemirror/search": "^6.5.2",
-    "@codemirror/state": "^6.2.1",
-    "@codemirror/view": "^6.17.1",
     "@ddietr/codemirror-themes": "^1.4.2",
-    "@emmetio/codemirror-plugin": "^1.2.4",
-    "@emmetio/codemirror6-plugin": "^0.3.0",
-    "codemirror": "^6.0.1",
-    "eslint-linter-browserify": "^8.48.0",
-    "thememirror": "^2.0.1"
+    "codemirror": "^6.0.1"
   }
 }

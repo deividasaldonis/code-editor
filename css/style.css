@@ -1,0 +1,86 @@
+:root {
+  --topnav-height: 67.188px;
+
+  --primary: #f77573;
+  --secondary: #fff;
+  --background: #191d21;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: var(--secondary);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.language-buttons {
+  display: flex;
+}
+
+.language {
+  padding: 1.2rem 1rem 1rem;
+  border-bottom: 0.2rem solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.language:hover {
+  border-color: var(--secondary);
+}
+
+.language.current {
+  color: var(--primary);
+  border-color: var(--primary);
+  cursor: default;
+}
+
+.main {
+  display: flex;
+}
+
+.editor-container {
+  flex: 2;
+}
+
+.output {
+  flex: 3;
+  background-color: #f5f5f5;
+}
+
+html,
+body,
+#app,
+.main,
+.editor-container,
+.editor,
+.cm-editor {
+  height: 100%;
+}
+
+.main {
+  height: calc(100% - var(--topnav-height));
+}
+
+.editor {
+  display: none;
+}
+
+.editor.current {
+  display: block;
+}
