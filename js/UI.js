@@ -9,6 +9,15 @@ const previewBtn = document.querySelector(".preview");
 
 const mediaQuery = window.matchMedia("(min-width: 800px)");
 
+// TODO
+// REFACTOR MEDIA QUERY LOGIC
+// STYLE THE PREVIEW PAGE
+// TEST
+// REFACTOR HTML
+// REFACTOR CSS
+// THEME
+// MENU
+
 export class UI {
   static setEditor(e) {
     const currentBtn = e.target.closest(".language");
